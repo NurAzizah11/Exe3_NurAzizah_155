@@ -123,7 +123,9 @@ namespace Exercise3
                             }
                     }
                 }
-                
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
                 }
             }
         }
