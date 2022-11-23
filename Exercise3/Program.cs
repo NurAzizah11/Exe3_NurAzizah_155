@@ -114,12 +114,20 @@ namespace Exercise3
                                 obj.firstNode();
                             }
                             break;
-
-                        }
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid option");
+                                break;
+                            }
                     }
+                }
+                
                 }
             }
         }
     }
 }
+
 
