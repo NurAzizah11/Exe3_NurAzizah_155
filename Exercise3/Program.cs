@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercise3
-{
+namespace Exercise_LinkedList_A
+{ 
     class Node
     {
         /*creates Nodes for the circular nexted list*/
