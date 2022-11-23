@@ -62,7 +62,7 @@ namespace Exercise3
         }
         public void firstNode()
         {
-            if (ListEmpty())
+            if (listEmpty())
                 Console.WriteLine("\nList is empty");
             else
                 Console.WriteLine("\nThe first record in the list is:\n\n " + LAST.next.rollNumber + LAST.next.name);
@@ -88,9 +88,28 @@ namespace Exercise3
                                 obj.traverse();
                             }
                             break;
-                        
-                             
+                        case '2':
+                            {
+                                if (obj.listEmpty() == true)
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break;
+                                }
+                                Node prev, curr;
+                                prev = curr = null;
+                                Console.Write("\nEnter the roll number of the student whose record is to be searched: ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                if (obj.Search(num, ref prev, ref curr) == false)
+                                    Console.Writeline("\nRecord not found");
+                                else
+                                {
+                                    Console.WriteLine("\nRecord found")
+                                    Console.WriteLine("\nRoll number: " + curr.rollNumber);
+                                    Console.WriteLine("\nName: " + curr.name);
+                                }
                             }
+                            break;
+
                         }
                     }
                 }
