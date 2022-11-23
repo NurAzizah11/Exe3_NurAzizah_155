@@ -100,10 +100,10 @@ namespace Exercise3
                                 Console.Write("\nEnter the roll number of the student whose record is to be searched: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
                                 if (obj.Search(num, ref prev, ref curr) == false)
-                                    Console.Writeline("\nRecord not found");
+                                    Console.WriteLine("\nRecord not found");
                                 else
                                 {
-                                    Console.WriteLine("\nRecord found")
+                                    Console.WriteLine("\nRecord found");
                                     Console.WriteLine("\nRoll number: " + curr.rollNumber);
                                     Console.WriteLine("\nName: " + curr.name);
                                 }
